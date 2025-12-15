@@ -1,3 +1,4 @@
+# Functions from string_utils.py
 def split_before_uppercases(formula):
     if not formula:
         return []
@@ -62,7 +63,8 @@ def balance_reaction(reaction): #"Fe2O3 + H2 -> Fe + H2O"
     return coefficients # [1/3, 1, 2/3, 1]
 
 
-
+# Functions from equation_utils.py
+import sympy
 ELEMENTS = [
     'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne',
     'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca',
